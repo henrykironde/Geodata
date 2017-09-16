@@ -1,0 +1,292 @@
+{
+  "currentVersion" : 10.51, 
+  "id" : 0, 
+  "name" : "Voting Centers and Ballot Sites", 
+  "type" : "Feature Layer", 
+  "serviceItemId" : "60cf1fbcea0a4c9eb12c866341fa92b9", 
+  "displayField" : "Name", 
+  "description" : "", 
+  "copyrightText" : "", 
+  "defaultVisibility" : true, 
+  "editingInfo" : {
+    "lastEditDate" : 1503950626653
+  }, 
+  "relationships" : [], 
+  "isDataVersioned" : false, 
+  "supportsCalculate" : true, 
+  "supportsTruncate" : true, 
+  "supportsAttachmentsByUploadId" : true, 
+  "supportsRollbackOnFailureParameter" : true, 
+  "supportsStatistics" : true, 
+  "supportsAdvancedQueries" : true, 
+  "supportsValidateSql" : true, 
+  "supportsCoordinatesQuantization" : true, 
+  "supportsApplyEditsWithGlobalIds" : false, 
+  "advancedQueryCapabilities" : {
+    "supportsPagination" : true, 
+    "supportsPaginationOnAggregatedQueries" : true, 
+    "supportsQueryRelatedPagination" : true, 
+    "supportsQueryWithDistance" : true, 
+    "supportsReturningQueryExtent" : true, 
+    "supportsStatistics" : true, 
+    "supportsOrderBy" : true, 
+    "supportsDistinct" : true, 
+    "supportsQueryWithResultType" : true, 
+    "supportsSqlExpression" : true, 
+    "supportsAdvancedQueryRelated" : true, 
+    "supportsReturningGeometryCentroid" : false, 
+    "supportsQueryWithDatumTransformation" : true
+  }, 
+  "useStandardizedQueries" : false, 
+  "geometryType" : "esriGeometryPoint", 
+  "minScale" : 0, 
+  "maxScale" : 0, 
+  "extent" : {
+    "xmin" : 1083621.6621000022, 
+    "ymin" : 572388.39470000565, 
+    "xmax" : 1259910.0050999967, 
+    "ymax" : 756547.3967999965, 
+    "spatialReference" : {
+      "wkid" : 2927, 
+      "latestWkid" : 2927
+    }
+  }, 
+  "drawingInfo":{"renderer":{"type":"uniqueValue","field1":"Type","field2":null,"field3":null,"fieldDelimiter":", ","defaultSymbol":null,"defaultLabel":null,"uniqueValueInfos":[{"symbol":{"type":"esriPMS","url":"916160026d4e178ac5d29cade9d042ed","imageData":"iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAJZJREFUCJllySEPAXEYwOHf8W6vEcwVJ5uisWmKiYLgdpvvYIRLOh/BfApNR5CMqkvSP569Zk4ws/HUR3jzmNLQQAs2sSOQAAgzKhrp0qrWs4wJESf2xIRsxR/4c1dzfT4CmrRZAC1xRdflV5k6KzpCyuMvn8Cdm6jTtVVsjPc9vejBhrYRu1pMlhwlQjzymujOzjYC0heqGi4QrThTvwAAAABJRU5ErkJggg==","contentType":"image/png","width":5,"height":5,"angle":0,"xoffset":0,"yoffset":0},"value":"Ballot Deposit Site","label":"Ballot Deposit Site","description":""},{"symbol":{"type":"esriPMS","url":"30fadbe53d03e7cefdef186146d6db89","imageData":"iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAKpJREFUCJldzKEOglAYhuHvwL8dp4Fh4ZAZxaabjeKMBgOMjXtwEkh0vATnVdDsaiA5rXQS6UTcYQ4Murnx1md7Cd9YmmIuBJ/EsXoAaACAsgx2GPKT46iNpikKQzyLAkkQ4Eq+Pz24rtz+DhACC8/DEcCSDEOuMciyMMtzrKjv8R5i1wFtixdJyc+2rfaM/bGq+D2K1IXqWiW6jpFpImAM46bht7JUOwD9B6EmMkEse2+/AAAAAElFTkSuQmCC","contentType":"image/png","width":5,"height":5,"angle":0,"xoffset":0,"yoffset":0},"value":"Voting Center","label":"Voting Center","description":""}]},"transparency":0,"labelingInfo":null}, 
+  "allowGeometryUpdates" : true, 
+  "hasAttachments" : false, 
+  "htmlPopupType" : "esriServerHTMLPopupTypeAsHTMLText", 
+  "hasM" : false, 
+  "hasZ" : false, 
+  "objectIdField" : "OBJECTID", 
+  "globalIdField" : "", 
+  "typeIdField" : "Type", 
+  "fields" : [
+    {
+      "name" : "OBJECTID", 
+      "type" : "esriFieldTypeOID", 
+      "alias" : "OBJECTID", 
+      "sqlType" : "sqlTypeOther", 
+      "nullable" : false, 
+      "editable" : false, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "Name", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "Name", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 100, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "Type", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "Type", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 30, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "Address", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "Address", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 100, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "City", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "City", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 25, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "Notes", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "Notes", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 150, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "Open_Schedule", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "Open_Schedule", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 150, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "Close_Schedule", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "Close_Schedule", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 150, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "Active", 
+      "type" : "esriFieldTypeSmallInteger", 
+      "alias" : "Active", 
+      "sqlType" : "sqlTypeOther", 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "Status", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "Status", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 25, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "Zip", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "Zip", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 10, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "Phone", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "Phone", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 15, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "Picture", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "Picture", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 255, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }
+  ], 
+  "indexes" : [
+    {
+      "name" : "FDO_OBJECTID", 
+      "fields" : "OBJECTID", 
+      "isAscending" : true, 
+      "isUnique" : true, 
+      "description" : ""
+    }, 
+    {
+      "name" : "FDO_Shape", 
+      "fields" : "Shape", 
+      "isAscending" : true, 
+      "isUnique" : false, 
+      "description" : ""
+    }
+  ], 
+  "types" : [
+    {
+      "id" : "Ballot Deposit Site", 
+      "name" : "Ballot Deposit Site", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "Ballot Deposit Site", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPoint", 
+          "prototype" : {
+            "attributes" : {
+              "Phone" : null, 
+              "Picture" : null, 
+              "Name" : null, 
+              "Type" : "Ballot Deposit Site", 
+              "Address" : null, 
+              "City" : null, 
+              "Notes" : null, 
+              "Open_Schedule" : null, 
+              "Close_Schedule" : null, 
+              "Active" : 1, 
+              "Status" : null, 
+              "Zip" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "Voting Center", 
+      "name" : "Voting Center", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "Voting Center", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPoint", 
+          "prototype" : {
+            "attributes" : {
+              "Phone" : null, 
+              "Picture" : null, 
+              "Name" : null, 
+              "Type" : "Voting Center", 
+              "Address" : null, 
+              "City" : null, 
+              "Notes" : null, 
+              "Open_Schedule" : null, 
+              "Close_Schedule" : null, 
+              "Active" : 1, 
+              "Status" : null, 
+              "Zip" : null
+            }
+          }
+        }
+      ]
+    }
+  ], 
+  "templates" : [], 
+  "supportedQueryFormats" : "JSON, geoJSON", 
+  "hasStaticData" : true, 
+  "maxRecordCount" : 100, 
+  "standardMaxRecordCount" : 32000, 
+  "tileMaxRecordCount" : 8000, 
+  "maxRecordCountFactor" : 1, 
+  "capabilities" : "Query,Extract"
+}

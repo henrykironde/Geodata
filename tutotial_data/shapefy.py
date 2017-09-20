@@ -2,9 +2,9 @@
 import os
 
 try:
-    from osgeo import ogr
+    from osgeo import ogr, osr
 except:
-    import ogr
+    import ogr. osr
 
 # Get Shapefile Feature Count
 
@@ -27,8 +27,16 @@ else:
     # Get the extent of the file
     extent = layer.GetExtent()
     print("Extent is {}".format(extent))
-    # geting features by id or all
+
+    # Get features by index or iterate till end
     feature = layer.GetFeature(0)
     print("\n")
     print(feature.GetGeometryRef().GetX())
     print(feature.GetGeometryRef().GetY())
+
+    # Get layer projection
+    spatialRef = layer.GetSpatialRef()
+    print("The spatial ref is",spatialRef )
+    print ("========\n")
+    sp = osr.SpatialReference()
+    print (sp.ExportToPrettyWkt())

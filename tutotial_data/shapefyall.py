@@ -110,14 +110,43 @@
 # ################################################
 
 
+# Get the attlibute names
 from osgeo import ogr
-shapefile= "Voting_Centers_and_Ballot_Sites/Voting_Centers_and_Ballot_Sites.shp"
+
+shapefile = "Voting_Centers_and_Ballot_Sites/Voting_Centers_and_Ballot_Sites.shp"
 dataSource = ogr.Open(shapefile)
 daLayer = dataSource.GetLayer(0)
 layerDefinition = daLayer.GetLayerDefn()
 
+# for i in range(layerDefinition.GetFieldCount()):
+#     print(layerDefinition.GetFieldDefn(i).GetName())
+#
+# A note about precision
+#
+# Only Integer, Integer64, Real, String and Date (not DateTime, just year/month/day)
+# field types are supported. The various list, and binary field types cannot be created.
+#
+# The field width and precision are directly used to establish storage size in the .dbf file.
+# This means that strings longer than the field width,
+# or numbers that don't fit into the indicated field format will suffer truncation.
+#
+# Integer fields without an explicit width are treated as width 9, and extended to 10 or 11 if needed.
+#
+# Integer64 fields without an explicit width are treated as width 18, and extended to 19 or 20 if needed.
+#
+# Real (floating point) fields without an explicit width are treated as width 24
+# with 15 decimal places of precision.
+#
+# String fields without an assigned width are treated as 80 characters.
+#
+# ref: http://www.gdal.org/drv_shapefile.html
 
+print ("Name  -  Type  Width  Precision")
 for i in range(layerDefinition.GetFieldCount()):
-    print (layerDefinition.GetFieldDefn(i).GetName())
+    fieldName =  layerDefinition.GetFieldDefn(i).GetName()
+    fieldTypeCode = layerDefinition.GetFieldDefn(i).GetType()
+    fieldType = layerDefinition.GetFieldDefn(i).GetFieldTypeName(fieldTypeCode)
+    fieldWidth = layerDefinition.GetFieldDefn(i).GetWidth()
+    GetPrecision = layerDefinition.GetFieldDefn(i).GetPrecision()
 
-    https://pcjericks.github.io/py-gdalogr-cookbook/layers.html
+    print (fieldName + " - " + fieldType+ " " + str(fieldWidth) + " " + str(GetPrecision))

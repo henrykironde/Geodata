@@ -1,8 +1,18 @@
 # Geodata
 
-#### sources of datahttps://freegisdata.rtwilson.com/ Contains Gis datasets
+#### sources of data
+
+https://freegisdata.rtwilson.com/ Contains Gis datasets
 https://www.census.gov/2010census/
 
+
+The data has some shapefiles with many layers
+http://www5.kingcounty.gov/gisdataportal/
+https://gis-kingcounty.opendata.arcgis.com/
+
+**DHS progam data**
+
+http://spatialdata.dhsprogram.com/home/
 
 ## developer notes:
 
@@ -10,9 +20,11 @@ https://www.census.gov/2010census/
 
 it turns out that PointFromText is perhaps the slowest way of doing this in Postgis. Using a combination of ST_Setsrid and ST_Point is on the magnitude of 7 to 10 times faster at least for versions of PostGIS 1.2 and above. ST_GeomFromText comes in second (replace ST_PointFromText with ST_GeomFromText) at about 3 to 1.5 times slower than ST_SetSRID ST_Point. See about PointFromText on why PointFromText is probably slower. In ST_GeomFromText, there appears to be some caching effects so on first run with similar datasets ST_GeomFromText starts out about 3-4 times slower than the ST_makepoint (ST_Point) way and then catches up to 1.5 times slower. This I tested on a dataset of about 150,000 records and all took - 26 secs for ST_PointFromText fairly consistently, 10.7 secs for first run of GeomFromText then 4.1 secs for each consecutive run, 3.5 secs fairly consistently for setsrid,makepoint on a dual Xeon 2.8 Ghz, Windows 2003 32-bit with 2 gig RAM).
 
+### Geojson
 
+To create json 
 
-
+ogrinfo -ro point.geojson
 
 ### postgis
 we can load files in two ways
@@ -274,5 +286,18 @@ for row in rs:
 rs.close()
 conn.close()
 quit()
+
+```
+
+
+#### bash
+
+```bash
+#!/bin/bash
+
+for f in *.shp
+do
+    shp2pgsql -I -s <SRID> $f `basename $f .shp` > `basename $f .shp`.sql
+done
 
 ```

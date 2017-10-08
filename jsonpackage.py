@@ -3,18 +3,61 @@ try:
 except:
     import ogr. osr
 
-from osgeo import ogr, osr
 import os
 import json
 import sys
 import io
 import collections
 
+from osgeo import ogr
+
 ENCODING = "latin1"
 os.environ['GDAL_DATA'] = "C:\Program Files (x86)\GDAL\gdal-data"
 
 # create json from meta data of the geo source
 
+WKBGeometryType = {
+1:"wkbPoint",
+2:"wkbLineString",
+3:"wkbPolygon",
+17:"wkbTriangle",
+4:"wkbMultiPoint",
+5:"wkbMultiLineString",
+6:"wkbMultiPolygon",
+7:"wkbGeometryCollection",
+15:"wkbPolyhedralSurface",
+16:"wkbTIN",
+1001:"wkbPointZ",
+1002:"wkbLineStringZ",
+1003:"wkbPolygonZ",
+1017:"wkbTrianglez",
+1004:"wkbMultiPointZ",
+1005:"wkbMultiLineStringZ",
+1006:"wkbMultiPolygonZ",
+1007:"wkbGeometryCollectionZ",
+1015:"wkbPolyhedralSurfaceZ",
+1016:"wkbTINZ",
+2001:"wkbPointM",
+2002:"wkbLineStringM",
+2003:"wkbPolygonM",
+2017:"wkbTriangleM",
+2004:"wkbMultiPointM",
+2005:"wkbMultiLineStringM",
+2006:"wkbMultiPolygonM",
+2007:"wkbGeometryCollectionM",
+2015:"wkbPolyhedralSurfaceM",
+2016:"wkbTINM",
+3001:"wkbPointZM",
+3002:"wkbLineStringZM",
+3003:"wkbPolygonZM",
+3017:"wkbTriangleZM",
+3004:"wkbMultiPointZM",
+3005:"wkbMultiLineStringZM",
+3006:"wkbMultiPolygonZM",
+3007:"wkbGeometryCollectionZM",
+3015:"wkbPolyhedralSurfaceZM",
+3016:"wkbTinZM",
+}
 
 def open_fw(file_name, encoding=ENCODING, encode=True):
     """Open file for writing respecting Python version and OS differences.
@@ -88,12 +131,11 @@ def create_datapackage(driver_name='ESRI Shapefile' ):
                 spatial_ref = "{}".format(str(sp_ref.ExportToWkt()))
 
                 # Json data package dictionary
-
                 allpacks[dir_name]["name"] = daLayer.GetName()
                 allpacks[dir_name]["title"] = "The {} dataset".format(daLayer.GetName())
                 allpacks[dir_name]["description"] = daLayer.GetDescription()
                 allpacks[dir_name]["gis_class"] = "vector"
-                allpacks[dir_name]["geom_type"] = daLayer.GetGeomType()
+                allpacks[dir_name]["geom_type"] = ogr.GeometryTypeToName(daLayer.GetLayerDefn().GetGeomType())
                 allpacks[dir_name]["spatial_ref"] = spatial_ref
                 allpacks[dir_name]["citation"] = "weaver Pending clarification"
                 allpacks[dir_name]["license"] = "Licence for dataset Pending clarification"

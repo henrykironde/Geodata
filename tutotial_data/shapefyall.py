@@ -120,11 +120,13 @@
 
 from osgeo import ogr, osr
 import os
-shapefile = "tutotial_data/boundaries/BOUNDARY_ARC.shp"
+shapefile = r"C:\Users\Henry\Documents\GitHub\Geodata\unpack\NEONDSSiteLayoutFiles\NEON-DS-Site-Layout-Files\US-Boundary-Layers\Boundary-US-State-Mass.shp"
 from osgeo import ogr, osr
 driver = ogr.GetDriverByName('ESRI Shapefile')
 dataset = driver.Open(shapefile, 0)
 layer = dataset.GetLayer()
+lyr_def = layer.GetLayerDefn()
+print(ogr.GeometryTypeToName(lyr_def.GetGeomType()))
 spatialRef = layer.GetSpatialRef()
 
 print (spatialRef.ExportToProj4())

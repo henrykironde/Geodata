@@ -125,7 +125,6 @@ def create_datapackage(driver_name='ESRI Shapefile' ):
                 daLayer = layer_scr.GetLayer()
 
                 allpacks[dir_name] = collections.OrderedDict()
-                allpacks[dir_name]["name"] = daLayer.GetName()
                 # spactial ref
                 sp_ref = daLayer.GetSpatialRef()
                 spatial_ref = "{}".format(str(sp_ref.ExportToWkt()))
@@ -145,6 +144,8 @@ def create_datapackage(driver_name='ESRI Shapefile' ):
                 allpacks[dir_name]["url"] = "FILL"
                 allpacks[dir_name]["version"] = "1.0.0"
                 allpacks[dir_name]["resources"] = []
+                allpacks[dir_name]["retriever"] = "True",
+                allpacks[dir_name]["retriever_minimum_version"] = "2.1.0",
 
                 layer = collections.OrderedDict()
                 layer["name"] = daLayer.GetName()
@@ -166,7 +167,7 @@ def create_datapackage(driver_name='ESRI Shapefile' ):
                 path_to_dir = os.path.abspath(path)
                 dir_name = os.path.basename(path_to_dir)
                 filenamejson = file_n[:-4].replace("-", "_").replace(".", "") + ".json"
-                file_path_source = os.path.join(path_to_dir, filenamejson)
+                file_path_source = os.path.join(r"C:\Users\Henry\Documents\GitHub\weav\scripts", filenamejson)
 
                 with open_fw(file_path_source) as output_spec_datapack:
                     json_str = json.dumps(allpacks[dir_name], output_spec_datapack, sort_keys=True, indent=4,

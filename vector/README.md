@@ -35,3 +35,20 @@ https://services2.arcgis.com/1UvBaQ5y1ubjUPmd/arcgis/rest/services/Voting_Center
 
 Json Example:
 https://services2.arcgis.com/1UvBaQ5y1ubjUPmd/arcgis/rest/services/Voting_Centers_and_Ballot_Sites/FeatureServer/0?f=pjson
+
+
+=================================
+Community provice regions dataset
+=================================
+
+This is a dataset that is from Italy
+
+https://www.gaia-gis.it/gaia-sins/spatialite-cookbook/html/create-db.html
+https://www.gaia-gis.it/gaia-sins/spatialite-cookbook/html/impexp.html
+
+
+We have also go a new dataset
+
+https://www.dati.lombardia.it/Ambiente/Stazioni-Meteorologiche/nf78-nj6b/data
+
+https://www.dati.lombardia.it/Ambiente/Dati-sensori-meteo/647i-nhxk

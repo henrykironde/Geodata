@@ -5,6 +5,8 @@
 https://freegisdata.rtwilson.com/ Contains Gis datasets
 https://www.census.gov/2010census/
 
+https://www.europeandataportal.eu/data/dataset
+
 
 The data has some shapefiles with many layers
 http://www5.kingcounty.gov/gisdataportal/

@@ -1,6 +1,6 @@
 {
     "citation": "Stazioni_Meteorologiche citation",
-    "description": "Database to Stazioni_Meteorologiche weather stations italy, IdSensore	Type	Unit of measure	IdStazione	under Station	Quote	province	Common name	Address	CGB_Nord	CGB_Est	lng	lat	location",
+    "description": "Database to Stazioni_Meteoro",
     "homepage": "https://raw.githubusercontent.com/henrykironde/Geodata/master/vector",
     "keywords": [],
     "name": "Stazioni-Meteoro",
@@ -20,7 +20,7 @@
                         "type": "char"
                     },
                     {
-                        "name": "Unità_DiMisura",
+                        "name": "Unit",
                         "type": "char"
                     },
                     {
@@ -33,7 +33,7 @@
                     },
                     {
                         "name": "Quota",
-                        "type": "int"
+                        "type": "char"
                     },
                     {
                         "name": "Provincia",

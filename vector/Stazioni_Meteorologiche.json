@@ -1,0 +1,82 @@
+{
+    "citation": "Stazioni_Meteorologiche citation",
+    "description": "Database to Stazioni_Meteorologiche weather stations italy, IdSensore	Type	Unit of measure	IdStazione	under Station	Quote	province	Common name	Address	CGB_Nord	CGB_Est	lng	lat	location",
+    "homepage": "https://raw.githubusercontent.com/henrykironde/Geodata/master/vector",
+    "keywords": [],
+    "name": "Stazioni-Meteoro",
+    "resources": [
+        {
+            "dialect": {
+            },
+            "name": "Stazioni",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "IdSensore",
+                        "type": "int"
+                    },
+                    {
+                        "name": "Tipologia",
+                        "type": "char"
+                    },
+                    {
+                        "name": "Unità_DiMisura",
+                        "type": "char"
+                    },
+                    {
+                        "name": "IdStazione",
+                        "type": "int"
+                    },
+                    {
+                        "name": "NomeStazione",
+                        "type": "char"
+                    },
+                    {
+                        "name": "Quota",
+                        "type": "int"
+                    },
+                    {
+                        "name": "Provincia",
+                        "type": "char"
+                    },
+                    {
+                        "name": "NomeComune",
+                        "type": "char"
+                    },
+                    {
+                        "name": "Indirizzo",
+                        "type": "char"
+                    },
+                    {
+                        "name": "CGB_Nord",
+                        "type": "int"
+                    },
+                    {
+                        "name": "CGB_Est",
+                        "type": "int"
+                    },
+                    {
+                        "name": "lng",
+                        "type": "double"
+                    },
+                    {
+                        "name": "lat",
+                        "type": "double"
+                    },
+                    {
+                        "name": "location",
+                        "type": "char"
+                    } 
+                ]
+            },
+            "url": "https://raw.githubusercontent.com/henrykironde/Geodata/master/vector/Stazioni_Meteorologiche.csv"
+        }
+    ],
+    "retriever": "True",
+    "retriever_minimum_version": "2.0.dev",
+    "title": "Stazioni_Meteorologiche weather stations italy",
+    "urls": {
+        "Stazioni": "https://raw.githubusercontent.com/henrykironde/Geodata/master/vector/Stazioni_Meteorologiche.csv"
+    },
+    "version": "1.0.0"
+}

@@ -1,0 +1,42 @@
+{
+    "citation": "citation for italy Dati sensori meteo",
+    "description": "italy Dati sensori meteo",
+    "homepage": "https://raw.githubusercontent.com/henrykironde/Geodata/master/vector/",
+    "keywords": [],
+    "name": "sensori-meteo",
+    "resources": [
+        {
+            "dialect": {
+            },
+            "name": "sensors",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "IdSensore",
+                        "type": "int"
+                    },
+                    {
+                        "name": "Data",
+                        "type": "char"
+                    },
+                    {
+                        "name": "Valore",
+                        "type": "char"
+                    },
+                    {
+                        "name": "Stato",
+                        "type": "char"
+                    }
+                ]
+            },
+            "url": "https://raw.githubusercontent.com/henrykironde/Geodata/master/vector/Dati_sensori_meteo.csv"
+        }
+    ],
+    "retriever": "True",
+    "retriever_minimum_version": "2.0.dev",
+    "title": "italy Dati sensori meteo",
+    "urls": {
+        "sensors": "https://raw.githubusercontent.com/henrykironde/Geodata/master/vector/Dati_sensori_meteo.csv"
+    },
+    "version": "1.0.0"
+}

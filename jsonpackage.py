@@ -8,7 +8,7 @@ import json
 import sys
 import io
 import collections
-
+from collections import OrderedDict
 from osgeo import ogr
 
 ENCODING = "latin1"
@@ -58,6 +58,7 @@ WKBGeometryType = {
 3015:"wkbPolyhedralSurfaceZM",
 3016:"wkbTinZM",
 }
+
 
 def open_fw(file_name, encoding=ENCODING, encode=True):
     """Open file for writing respecting Python version and OS differences.
@@ -133,13 +134,12 @@ def create_datapackage(driver_name='ESRI Shapefile' ):
                 allpacks[dir_name]["name"] = daLayer.GetName()
                 allpacks[dir_name]["title"] = "The {} dataset".format(daLayer.GetName())
                 allpacks[dir_name]["description"] = daLayer.GetDescription()
-                allpacks[dir_name]["gis_class"] = "vector"
-                allpacks[dir_name]["geom_type"] = ogr.GeometryTypeToName(daLayer.GetLayerDefn().GetGeomType())
+                allpacks[dir_name]["format"] = "vector" # like  https://specs.frictionlessdata.io/data-resource/ in format: 'csv', 'xls', 'json' here we clasify by type vector or raster
                 allpacks[dir_name]["spatial_ref"] = spatial_ref
                 allpacks[dir_name]["citation"] = "weaver Pending clarification"
                 allpacks[dir_name]["license"] = "Licence for dataset Pending clarification"
                 allpacks[dir_name]["driver_name"] ='ESRI Shapefile'
-                allpacks[dir_name]["extent"] = daLayer.GetExtent()
+                allpacks[dir_name]["extent"] = dict(zip(["xMin", "xMax", "yMin", "yMax"], daLayer.GetExtent()))
                 allpacks[dir_name]["keywords"] = ["test", "data science", "spatial-data"]
                 allpacks[dir_name]["url"] = "FILL"
                 allpacks[dir_name]["version"] = "1.0.0"
@@ -149,13 +149,14 @@ def create_datapackage(driver_name='ESRI Shapefile' ):
 
                 layer = collections.OrderedDict()
                 layer["name"] = daLayer.GetName()
+                layer["geom_type"] = ogr.GeometryTypeToName(daLayer.GetLayerDefn().GetGeomType())
                 layer['schema'] = {}
                 layer['schema']["fields"] = []
                 layerDefinition = daLayer.GetLayerDefn()
                 for i in range(layerDefinition.GetFieldCount()):
                     col_obj = collections.OrderedDict()
                     col_obj["name"] = layerDefinition.GetFieldDefn(i).GetName()
-                    col_obj["Precision"] = layerDefinition.GetFieldDefn(i).GetPrecision()
+                    col_obj["precision"] = layerDefinition.GetFieldDefn(i).GetPrecision()
                     col_obj["type"] = layerDefinition.GetFieldDefn(i).GetTypeName()
                     col_obj["size"] = layerDefinition.GetFieldDefn(i).GetWidth()
                     layer["schema"]["fields"].append(col_obj)

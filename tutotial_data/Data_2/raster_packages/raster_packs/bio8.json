@@ -1,0 +1,48 @@
+{
+    "name": "bio8",
+    "url": "link to where the data is stored",
+    "title": "--A titile for the dataset",
+    "driver": "EHdr",
+    "description": "--A good description for the dataset",
+    "license": "--A license",
+    "keywords": [
+        "test",
+        "data science",
+        "spatial-data"
+    ],
+    "citation": "--citation for the dataset",
+    "version": "--The version of the dataset",
+    "homepage": "--The home page of the data",
+    "colums": 8640,
+    "rows": 3600,
+    "band_count": 1,
+    "datum": "--Coordinate Reference System",
+    "projection": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+    "file_size": "--size of file on disk",
+    "group_count": "--Number of groups in the dataset if applicable",
+    "dataset_count": "--The number of individual datasets",
+    "transform": {
+        "xOrigin": -180.00000000000335,
+        "pixelWidth": 0.041666666666667,
+        "rotation_2": 0.0,
+        "yOrigin": 90.00000000000003,
+        "rotation_4": 0.0,
+        "pixelHeight": -0.041666666666667
+    },
+    "resources": [
+        {
+            "band_name": "bio8_1",
+            "no_data_value": -9999.0,
+            "min": -278.0,
+            "max": 376.0,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": -278.0,
+                "maximum": 376.0,
+                "mean": 152.698580875,
+                "stddev": 105.6714606395
+            }
+        }
+    ]
+}

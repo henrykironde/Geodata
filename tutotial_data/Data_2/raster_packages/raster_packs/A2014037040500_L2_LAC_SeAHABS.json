@@ -1,0 +1,539 @@
+{
+    "name": "A2014037040500.L2_LAC.SeAHABS",
+    "url": "link to where the data is stored",
+    "description": "--A good description for the dataset",
+    "license": "--A license",
+    "keywords": [
+        "test",
+        "data science",
+        "spatial-data"
+    ],
+    "citation": "--citation for the dataset",
+    "version": "--The version of the dataset",
+    "homepage": "--The home page of the data",
+    "resources": [
+        {
+            "band_name": "11",
+            "description": "",
+            "no_data_value": null,
+            "min": 126.39875793457,
+            "max": 139.32957458496,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": 126.39875793457,
+                "maximum": 139.32957458496,
+                "mean": 134.06519718279,
+                "stddev": 2.6081154825944
+            }
+        },
+        {
+            "band_name": "12",
+            "description": "",
+            "no_data_value": null,
+            "min": 5.3433003425598,
+            "max": 24.782308578491,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": 5.3433003425598,
+                "maximum": 24.782308578491,
+                "mean": 15.188940361933,
+                "stddev": 5.2170775325254
+            }
+        },
+        {
+            "band_name": "15",
+            "description": "",
+            "no_data_value": null,
+            "min": -32767.0,
+            "max": 5495.0,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": -32767.0,
+                "maximum": 5495.0,
+                "mean": -23439.815781301,
+                "stddev": 15440.060586502
+            }
+        },
+        {
+            "band_name": "16",
+            "description": "",
+            "no_data_value": null,
+            "min": null,
+            "max": null,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 0.0,
+                "mean": 0.0,
+                "stddev": -1.0
+            }
+        },
+        {
+            "band_name": "17",
+            "description": "",
+            "no_data_value": null,
+            "min": null,
+            "max": null,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 0.0,
+                "mean": 0.0,
+                "stddev": -1.0
+            }
+        },
+        {
+            "band_name": "18",
+            "description": "",
+            "no_data_value": null,
+            "min": null,
+            "max": null,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 0.0,
+                "mean": 0.0,
+                "stddev": -1.0
+            }
+        },
+        {
+            "band_name": "19",
+            "description": "",
+            "no_data_value": null,
+            "min": null,
+            "max": null,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 0.0,
+                "mean": 0.0,
+                "stddev": -1.0
+            }
+        },
+        {
+            "band_name": "20",
+            "description": "",
+            "no_data_value": null,
+            "min": null,
+            "max": null,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 0.0,
+                "mean": 0.0,
+                "stddev": -1.0
+            }
+        },
+        {
+            "band_name": "21",
+            "description": "",
+            "no_data_value": null,
+            "min": null,
+            "max": null,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 0.0,
+                "mean": 0.0,
+                "stddev": -1.0
+            }
+        },
+        {
+            "band_name": "22",
+            "description": "",
+            "no_data_value": null,
+            "min": null,
+            "max": null,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 0.0,
+                "mean": 0.0,
+                "stddev": -1.0
+            }
+        },
+        {
+            "band_name": "23",
+            "description": "",
+            "no_data_value": null,
+            "min": null,
+            "max": null,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 0.0,
+                "mean": 0.0,
+                "stddev": -1.0
+            }
+        },
+        {
+            "band_name": "24",
+            "description": "",
+            "no_data_value": null,
+            "min": null,
+            "max": null,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 0.0,
+                "mean": 0.0,
+                "stddev": -1.0
+            }
+        },
+        {
+            "band_name": "25",
+            "description": "",
+            "no_data_value": null,
+            "min": null,
+            "max": null,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 0.0,
+                "mean": 0.0,
+                "stddev": -1.0
+            }
+        },
+        {
+            "band_name": "26",
+            "description": "",
+            "no_data_value": null,
+            "min": null,
+            "max": null,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 0.0,
+                "mean": 0.0,
+                "stddev": -1.0
+            }
+        },
+        {
+            "band_name": "27",
+            "description": "",
+            "no_data_value": null,
+            "min": null,
+            "max": null,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 0.0,
+                "mean": 0.0,
+                "stddev": -1.0
+            }
+        },
+        {
+            "band_name": "28",
+            "description": "",
+            "no_data_value": null,
+            "min": null,
+            "max": null,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 0.0,
+                "mean": 0.0,
+                "stddev": -1.0
+            }
+        },
+        {
+            "band_name": "29",
+            "description": "",
+            "no_data_value": null,
+            "min": null,
+            "max": null,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 0.0,
+                "mean": 0.0,
+                "stddev": -1.0
+            }
+        },
+        {
+            "band_name": "30",
+            "description": "",
+            "no_data_value": null,
+            "min": null,
+            "max": null,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 0.0,
+                "mean": 0.0,
+                "stddev": -1.0
+            }
+        },
+        {
+            "band_name": "31",
+            "description": "",
+            "no_data_value": null,
+            "min": null,
+            "max": null,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 0.0,
+                "mean": 0.0,
+                "stddev": -1.0
+            }
+        },
+        {
+            "band_name": "32",
+            "description": "",
+            "no_data_value": null,
+            "min": null,
+            "max": null,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 0.0,
+                "mean": 0.0,
+                "stddev": -1.0
+            }
+        },
+        {
+            "band_name": "33",
+            "description": "",
+            "no_data_value": null,
+            "min": null,
+            "max": null,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 0.0,
+                "mean": 0.0,
+                "stddev": -1.0
+            }
+        },
+        {
+            "band_name": "34",
+            "description": "",
+            "no_data_value": null,
+            "min": null,
+            "max": null,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 0.0,
+                "mean": 0.0,
+                "stddev": -1.0
+            }
+        },
+        {
+            "band_name": "35",
+            "description": "",
+            "no_data_value": null,
+            "min": null,
+            "max": null,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 0.0,
+                "mean": 0.0,
+                "stddev": -1.0
+            }
+        },
+        {
+            "band_name": "36",
+            "description": "",
+            "no_data_value": null,
+            "min": null,
+            "max": null,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 0.0,
+                "mean": 0.0,
+                "stddev": -1.0
+            }
+        },
+        {
+            "band_name": "37",
+            "description": "",
+            "no_data_value": null,
+            "min": null,
+            "max": null,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 0.0,
+                "mean": 0.0,
+                "stddev": -1.0
+            }
+        },
+        {
+            "band_name": "38",
+            "description": "",
+            "no_data_value": null,
+            "min": null,
+            "max": null,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 0.0,
+                "mean": 0.0,
+                "stddev": -1.0
+            }
+        },
+        {
+            "band_name": "39",
+            "description": "",
+            "no_data_value": null,
+            "min": null,
+            "max": null,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 0.0,
+                "mean": 0.0,
+                "stddev": -1.0
+            }
+        },
+        {
+            "band_name": "40",
+            "description": "",
+            "no_data_value": null,
+            "min": null,
+            "max": null,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 0.0,
+                "mean": 0.0,
+                "stddev": -1.0
+            }
+        },
+        {
+            "band_name": "41",
+            "description": "",
+            "no_data_value": null,
+            "min": null,
+            "max": null,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 0.0,
+                "mean": 0.0,
+                "stddev": -1.0
+            }
+        },
+        {
+            "band_name": "42",
+            "description": "",
+            "no_data_value": null,
+            "min": null,
+            "max": null,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 0.0,
+                "mean": 0.0,
+                "stddev": -1.0
+            }
+        },
+        {
+            "band_name": "43",
+            "description": "",
+            "no_data_value": null,
+            "min": null,
+            "max": null,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 0.0,
+                "mean": 0.0,
+                "stddev": -1.0
+            }
+        },
+        {
+            "band_name": "44",
+            "description": "",
+            "no_data_value": null,
+            "min": null,
+            "max": null,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 0.0,
+                "mean": 0.0,
+                "stddev": -1.0
+            }
+        },
+        {
+            "band_name": "45",
+            "description": "",
+            "no_data_value": null,
+            "min": null,
+            "max": null,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 0.0,
+                "mean": 0.0,
+                "stddev": -1.0
+            }
+        },
+        {
+            "band_name": "46",
+            "description": "",
+            "no_data_value": null,
+            "min": null,
+            "max": null,
+            "scale": null,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 0.0,
+                "mean": 0.0,
+                "stddev": -1.0
+            }
+        }
+    ],
+    "projection": "",
+    "driver": "HDF4Image",
+    "transform": {
+        "xOrigin": 0.0,
+        "pixelWidth": 1.0,
+        "rotation_2": 0.0,
+        "yOrigin": 0.0,
+        "rotation_4": 0.0,
+        "pixelHeight": 1.0
+    },
+    "colums": 423,
+    "rows": 2040,
+    "band_count": 1
+}

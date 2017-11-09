@@ -139,7 +139,7 @@ def create_datapackage(driver_name='ESRI Shapefile' ):
                 allpacks[dir_name]["citation"] = "weaver Pending clarification"
                 allpacks[dir_name]["license"] = "Licence for dataset Pending clarification"
                 allpacks[dir_name]["driver_name"] ='ESRI Shapefile'
-                allpacks[dir_name]["extent"] = dict(zip(["xMin", "xMax", "yMin", "yMax"], daLayer.GetExtent()))
+                allpacks[dir_name]["extent"] = OrderedDict(zip(["xMin", "xMax", "yMin", "yMax"], daLayer.GetExtent()))
                 allpacks[dir_name]["keywords"] = ["test", "data science", "spatial-data"]
                 allpacks[dir_name]["url"] = "FILL"
                 allpacks[dir_name]["version"] = "1.0.0"
@@ -149,6 +149,7 @@ def create_datapackage(driver_name='ESRI Shapefile' ):
 
                 layer = collections.OrderedDict()
                 layer["name"] = daLayer.GetName()
+                layer["url"] = str(daLayer.GetName())+ "path_to_be_filled"
                 layer["geom_type"] = ogr.GeometryTypeToName(daLayer.GetLayerDefn().GetGeomType())
                 layer['schema'] = {}
                 layer['schema']["fields"] = []
@@ -168,7 +169,7 @@ def create_datapackage(driver_name='ESRI Shapefile' ):
                 path_to_dir = os.path.abspath(path)
                 dir_name = os.path.basename(path_to_dir)
                 filenamejson = file_n[:-4].replace("-", "_").replace(".", "") + ".json"
-                file_path_source = os.path.join(r"C:\Users\Henry\Documents\GitHub\weav\scripts", filenamejson)
+                file_path_source = os.path.join(r"C:\Users\Henry\Documents\GitHub\Geodata\tutotial_data\Data_2\raster_packages", filenamejson)
 
                 with open_fw(file_path_source) as output_spec_datapack:
                     json_str = json.dumps(allpacks[dir_name], output_spec_datapack, sort_keys=True, indent=4,

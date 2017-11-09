@@ -1,0 +1,100 @@
+{
+    "citation": "weaver Pending clarification",
+    "description": "US-State-Boundaries-Census-2014",
+    "driver_name": "ESRI Shapefile",
+    "extent": {
+        "xMax": -66.949895,
+        "xMin": -124.72583900000001,
+        "yMax": 49.384358,
+        "yMin": 24.498130999999997
+    },
+    "format": "vector",
+    "keywords": [
+        "test",
+        "data science",
+        "spatial-data"
+    ],
+    "license": "Licence for dataset Pending clarification",
+    "name": "US-State-Boundaries-Census-2014",
+    "resources": [
+        {
+            "geom_type": "3D Polygon",
+            "name": "US-State-Boundaries-Census-2014",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "STATEFP",
+                        "precision": 0,
+                        "size": 2,
+                        "type": "String"
+                    },
+                    {
+                        "name": "STATENS",
+                        "precision": 0,
+                        "size": 8,
+                        "type": "String"
+                    },
+                    {
+                        "name": "AFFGEOID",
+                        "precision": 0,
+                        "size": 11,
+                        "type": "String"
+                    },
+                    {
+                        "name": "GEOID",
+                        "precision": 0,
+                        "size": 2,
+                        "type": "String"
+                    },
+                    {
+                        "name": "STUSPS",
+                        "precision": 0,
+                        "size": 2,
+                        "type": "String"
+                    },
+                    {
+                        "name": "NAME",
+                        "precision": 0,
+                        "size": 100,
+                        "type": "String"
+                    },
+                    {
+                        "name": "LSAD",
+                        "precision": 0,
+                        "size": 2,
+                        "type": "String"
+                    },
+                    {
+                        "name": "ALAND",
+                        "precision": 0,
+                        "size": 14,
+                        "type": "Integer64"
+                    },
+                    {
+                        "name": "AWATER",
+                        "precision": 0,
+                        "size": 14,
+                        "type": "Integer64"
+                    },
+                    {
+                        "name": "region",
+                        "precision": 0,
+                        "size": 100,
+                        "type": "String"
+                    }
+                ]
+            },
+            "url": "US-State-Boundaries-Census-2014path_to_be_filled"
+        }
+    ],
+    "retriever": [
+        "True"
+    ],
+    "retriever_minimum_version": [
+        "2.1.0"
+    ],
+    "spatial_ref": "GEOGCS[\"GCS_WGS_1984\",DATUM[\"WGS_1984\",SPHEROID[\"WGS_84\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.017453292519943295]]",
+    "title": "The US-State-Boundaries-Census-2014 dataset",
+    "url": "FILL",
+    "version": "1.0.0"
+}

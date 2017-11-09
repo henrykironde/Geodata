@@ -1,0 +1,76 @@
+{
+    "name": "nat_color",
+    "url": "link to where the data is stored",
+    "title": "--A titile for the dataset",
+    "driver": "GTiff",
+    "description": "--A good description for the dataset",
+    "license": "--A license",
+    "keywords": [
+        "test",
+        "data science",
+        "spatial-data"
+    ],
+    "citation": "--citation for the dataset",
+    "version": "--The version of the dataset",
+    "homepage": "--The home page of the data",
+    "colums": 8849,
+    "rows": 8023,
+    "band_count": 3,
+    "datum": "--Coordinate Reference System",
+    "projection": "PROJCS[\"WGS 84 / UTM zone 10N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-123],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32610\"]]",
+    "file_size": "--size of file on disk",
+    "group_count": "--Number of groups in the dataset if applicable",
+    "dataset_count": "--The number of individual datasets",
+    "transform": {
+        "xOrigin": 343724.25,
+        "pixelWidth": 28.5,
+        "rotation_2": 0.0,
+        "yOrigin": 5369585.25,
+        "rotation_4": 0.0,
+        "pixelHeight": -28.5
+    },
+    "resources": [
+        {
+            "band_name": "nat_color_1",
+            "no_data_value": null,
+            "min": 0.0,
+            "max": 255.0,
+            "scale": 1.0,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 255.0,
+                "mean": 21.889337619819,
+                "stddev": 24.730090082235
+            }
+        },
+        {
+            "band_name": "nat_color_2",
+            "no_data_value": null,
+            "min": 0.0,
+            "max": 255.0,
+            "scale": 1.0,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 255.0,
+                "mean": 28.279928945383,
+                "stddev": 27.258987696194
+            }
+        },
+        {
+            "band_name": "nat_color_3",
+            "no_data_value": null,
+            "min": 0.0,
+            "max": 255.0,
+            "scale": 1.0,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 255.0,
+                "mean": 38.701751745571,
+                "stddev": 34.641687132074
+            }
+        }
+    ]
+}

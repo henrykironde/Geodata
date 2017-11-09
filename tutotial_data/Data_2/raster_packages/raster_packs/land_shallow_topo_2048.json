@@ -1,0 +1,76 @@
+{
+    "name": "land_shallow_topo_2048",
+    "url": "link to where the data is stored",
+    "title": "--A titile for the dataset",
+    "driver": "GTiff",
+    "description": "--A good description for the dataset",
+    "license": "--A license",
+    "keywords": [
+        "test",
+        "data science",
+        "spatial-data"
+    ],
+    "citation": "--citation for the dataset",
+    "version": "--The version of the dataset",
+    "homepage": "--The home page of the data",
+    "colums": 2048,
+    "rows": 1024,
+    "band_count": 3,
+    "datum": "--Coordinate Reference System",
+    "projection": "",
+    "file_size": "--size of file on disk",
+    "group_count": "--Number of groups in the dataset if applicable",
+    "dataset_count": "--The number of individual datasets",
+    "transform": {
+        "xOrigin": 0.0,
+        "pixelWidth": 1.0,
+        "rotation_2": 0.0,
+        "yOrigin": 0.0,
+        "rotation_4": 0.0,
+        "pixelHeight": 1.0
+    },
+    "resources": [
+        {
+            "band_name": "land_shallow_topo_2048_1",
+            "no_data_value": null,
+            "min": 0.0,
+            "max": 255.0,
+            "scale": 1.0,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 255.0,
+                "mean": 46.824661254883,
+                "stddev": 64.985419904373
+            }
+        },
+        {
+            "band_name": "land_shallow_topo_2048_2",
+            "no_data_value": null,
+            "min": 0.0,
+            "max": 255.0,
+            "scale": 1.0,
+            "color_table": null,
+            "statistics": {
+                "minimum": 0.0,
+                "maximum": 255.0,
+                "mean": 47.353515625,
+                "stddev": 61.805233581314
+            }
+        },
+        {
+            "band_name": "land_shallow_topo_2048_3",
+            "no_data_value": null,
+            "min": 5.0,
+            "max": 255.0,
+            "scale": 1.0,
+            "color_table": null,
+            "statistics": {
+                "minimum": 5.0,
+                "maximum": 255.0,
+                "mean": 63.783218383789,
+                "stddev": 43.929416080362
+            }
+        }
+    ]
+}

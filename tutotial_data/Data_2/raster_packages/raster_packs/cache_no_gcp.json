@@ -1,0 +1,48 @@
+{
+    "name": "cache_no_gcp",
+    "url": "link to where the data is stored",
+    "title": "--A titile for the dataset",
+    "driver": "GTiff",
+    "description": "--A good description for the dataset",
+    "license": "--A license",
+    "keywords": [
+        "test",
+        "data science",
+        "spatial-data"
+    ],
+    "citation": "--citation for the dataset",
+    "version": "--The version of the dataset",
+    "homepage": "--The home page of the data",
+    "colums": 4500,
+    "rows": 3000,
+    "band_count": 1,
+    "datum": "--Coordinate Reference System",
+    "projection": "",
+    "file_size": "--size of file on disk",
+    "group_count": "--Number of groups in the dataset if applicable",
+    "dataset_count": "--The number of individual datasets",
+    "transform": {
+        "xOrigin": 0.0,
+        "pixelWidth": 1.0,
+        "rotation_2": 0.0,
+        "yOrigin": 0.0,
+        "rotation_4": 0.0,
+        "pixelHeight": 1.0
+    },
+    "resources": [
+        {
+            "band_name": "cache_no_gcp_1",
+            "no_data_value": null,
+            "min": 16.0,
+            "max": 254.0,
+            "scale": 1.0,
+            "color_table": null,
+            "statistics": {
+                "minimum": 16.0,
+                "maximum": 254.0,
+                "mean": 108.74515079365,
+                "stddev": 37.159973936928
+            }
+        }
+    ]
+}

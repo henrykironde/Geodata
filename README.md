@@ -360,3 +360,6 @@ Joins
 http://www.qgistutorials.com/en/docs/performing_table_joins.html
 http://revenant.ca/www/postgis/workshop/joins.html
 https://www.tutorialspoint.com/postgresql/postgresql_using_joins.htm
+
+Sample spatialite datasets
+http://www.gaia-gis.it/spatialite-2.3.1/resources.html

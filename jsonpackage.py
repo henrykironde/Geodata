@@ -171,7 +171,6 @@ def create_datapackage(driver_name='ESRI Shapefile' ):
                 filenamejson = file_n[:-4].replace("-", "_").replace(".", "") + ".json"
                 # file_path_source = os.path.join(r"C:\Users\Henry\Documents\GitHub\Geodata\tutotial_data\Data_2\raster_packages", filenamejson)
                 file_path_source = os.path.join('.', filenamejson)
-                
                 with open_fw(file_path_source) as output_spec_datapack:
                     json_str = json.dumps(allpacks[dir_name], sort_keys=True, indent=4,
                                           separators=(',', ': '))

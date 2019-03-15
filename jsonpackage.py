@@ -169,12 +169,12 @@ def create_datapackage(driver_name='ESRI Shapefile' ):
                 path_to_dir = os.path.abspath(path)
                 dir_name = os.path.basename(path_to_dir)
                 filenamejson = file_n[:-4].replace("-", "_").replace(".", "") + ".json"
-                file_path_source = os.path.join(r"C:\Users\Henry\Documents\GitHub\weaver\scripts", filenamejson)
-                os.system("git add -f {}".format(file_path_source))
-
+                # file_path_source = os.path.join(r"C:\Users\Henry\Documents\GitHub\Geodata\tutotial_data\Data_2\raster_packages", filenamejson)
+                file_path_source = os.path.join('.', filenamejson)
                 with open_fw(file_path_source) as output_spec_datapack:
-                    json_str = json.dumps(allpacks[dir_name], output_spec_datapack, sort_keys=True, indent=4,
+                    json_str = json.dumps(allpacks[dir_name], sort_keys=True, indent=4,
                                           separators=(',', ': '))
+
                     output_spec_datapack.write(json_str + '\n')
 
                     output_spec_datapack.close()

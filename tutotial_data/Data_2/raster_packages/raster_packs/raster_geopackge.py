@@ -36,6 +36,7 @@ def open_fw(file_name, encoding=ENCODING, encode=True):
 
 class Datasets(object):
     simple_formats = ['.gif', '.img', '.bil', '.jpg', '.tif', '.tiff', '.hdf', '.l1b']
+    simple_formats = ['gif', 'img', 'bil', 'jpg', 'tif', 'tiff', 'hdf', 'l1b'] + simple_formats
     multi_formats = ["hdf"]
 
     def __init__(self):
@@ -56,6 +57,8 @@ class Datasets(object):
         """Get all the bands from the source files"""
         self.readsource(pathx)
 
+        print("Henry", self.firm)
+
         for i in self.firm:
             if os.path.isfile(i) and os.path.splitext(os.path.normpath(i))[1] in self.simple_formats:
                 fomartx = os.path.splitext(os.path.normpath(i))[1][1:]
@@ -66,7 +69,8 @@ class Datasets(object):
 
                 # try:
                 if True:
-                    if fomartx not in self.multi_formats:
+                    if fomartx in self.simple_formats:
+                    # if fomartx in self.multi_formats:
                         mysubdataset_name = i
                         src_ds = gdal.Open(mysubdataset_name, GA_ReadOnly)
 
@@ -115,8 +119,7 @@ class Datasets(object):
 
                         file_path_source = pack["name"] + ".json"
                         with open_fw(file_path_source) as output_spec_datapack:
-                            json_str = json.dumps(pack, output_spec_datapack, sort_keys=False, indent=4,
-                                                  separators=(',', ': '))
+                            json_str = json.dumps(pack, sort_keys=False, indent=4, separators=(',', ': '))
                             output_spec_datapack.write(json_str + '\n')
 
                             output_spec_datapack.close()
@@ -168,18 +171,22 @@ class Datasets(object):
                                 pack["resources"].append(bands)
 
                                 file_path_source = pack["name"].replace(".","_") + ".json"
+                                print (file_path_source)
 
                                 with open_fw(file_path_source) as output_spec_datapack:
-                                    json_str = json.dumps(pack, output_spec_datapack, sort_keys=False, indent=4,
-                                                          separators=(',', ': '))
+                                    json_str = json.dumps(pack, sort_keys=False, indent=4, separators=(',', ': '))
                                     output_spec_datapack.write(json_str + '\n')
 
                                     output_spec_datapack.close()
 
 
-file_path = r"C:\Users\Henry\PycharmProjects\gdalandgis\gdaltest\data\hdffiles"
-file_path = r"C:\Users\Henry\PycharmProjects\gdalandgis\gdaltest\data\bio"
-os.chdir(r"C:\Users\Henry\Documents\GitHub\weaver\raster_packs")
+# file_path = r"C:\Users\Henry\PycharmProjects\gdalandgis\gdaltest\data\hdffiles"
+# file_path = r"C:\Users\Henry\PycharmProjects\gdalandgis\gdaltest\data\bio"
+
+file_path = r"/Users/henrykironde/Documents/GitHub/retriever/test/raw_data_gis/test_raster_bio2"
+# os.chdir(file_path)
+
+# os.chdir(r"C:\Users\Henry\Documents\GitHub\weaver\raster_packs")
 v = Datasets()
 print(os.path.abspath(os.path.curdir))
 v.getbands(file_path)
